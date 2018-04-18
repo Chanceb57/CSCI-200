@@ -3,7 +3,7 @@ package shoppingCart;
 import shoppingCart.storeItems;
 
 public class cart {
-	private Item[] cart;
+	private storeItem[] cart;
 	private int itemCount;
 	private double totalPrice;
 	//public static void main(String[]args){
@@ -14,19 +14,34 @@ public class cart {
 		totalPrice = 0.0;
 		//empty shopping cart
 	}
-	public void addToCart(String itemName, double price, int amount)
+	public void addToCart(String itemName, String description, double amount)
 	{
-		Item temp = new Item(itemName, price, amount);
-		totalPrice = (price * amount);
-		itemCount = amount;
+		Item temp = new Item(itemName, description, amount);
 		cart[itemCount] = temp;
+		itemCount += 1;
 		//adds an item to cart
 	}
 	public void deleteItem(itemName){
+		for (cart)
+			if (UserInput == deleteItem (itemName))
+			return null;
+				System.out.print("Item deleted")
+				
+		//loop through the cart array, comparing the item names of the cart items
+		// to the item name passed in as a parameter. When you find the correct
+		// item, then you can set that space of the array to null
+
 		cart.remove(itemName);
 	}
 	public void deleteAll{
-		cart.remove
+
+		for(cart)
+			if (userInput == deleteAll)
+			return null;
+				System.out.print("All items deleted");
+			
+				
+				//null all items, but not the cart itself
 	}
 	
 	public String toSting(){

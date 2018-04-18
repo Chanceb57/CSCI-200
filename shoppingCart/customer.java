@@ -17,11 +17,19 @@ public class customer {
 	public String getfirst(){
 		return firstName;
 	}
+	public void setfirstName(String first){
+		this.firstName = first;
+	}
 	public String getlast(){
 		return lastName;
 	}
+	public void setlastName(String last){
+		this.lastName = last;
+	}
 	public String getlocation(){
 		return address;
-	
+	}
+	public void setaddress(String location){
+		this.address = location;
 	}
 }
