@@ -1,47 +1,31 @@
 package shoppingCart;
 
 import shoppingCart.storeItems;
+import java.util.ArrayList;
 
 public class cart {
-	private storeItem[] cart;
-	private int itemCount;
+	int amount = 0
+	private ArrayList<Item> cart = new ArrayList<Item>(); 
 	private double totalPrice;
-	//public static void main(String[]args){
-		//ArrayList<Item> cart = new ArrayList<Item>();
-		public cart{
-		cart = new Item[capacity];
-		itemCount = 0;
-		totalPrice = 0.0;
-		//empty shopping cart
+		
 	}
 	public void addToCart(String itemName, String description, double amount)
 	{
 		Item temp = new Item(itemName, description, amount);
-		cart[itemCount] = temp;
-		itemCount += 1;
-		//adds an item to cart
+		cart.add(Item);
+		
 	}
 	public void deleteItem(itemName){
-		for (cart)
 			if (UserInput == deleteItem (itemName))
-			return null;
+			cart.remove(itemName);
 				System.out.print("Item deleted")
 				
-		//loop through the cart array, comparing the item names of the cart items
-		// to the item name passed in as a parameter. When you find the correct
-		// item, then you can set that space of the array to null
-
-		cart.remove(itemName);
+		
 	}
 	public void deleteAll{
-
-		for(cart)
 			if (userInput == deleteAll)
-			return null;
+			cart.clear();
 				System.out.print("All items deleted");
-			
-				
-				//null all items, but not the cart itself
 	}
 	
 	public String toSting(){
@@ -50,14 +34,14 @@ public class cart {
 		String contents = "Shopping Cart";
 		contents = "Item\t\tUnit Price\tQuantity\tTotal";
 		
-		for (int i=0; i<itemCount; i++)
-			contents += cart[i].toString() + " ";
+	public 	void Total(double amount)
+		for (int i=0; i < amount; i++)
+			sum += i;
 		
-		contents = "Total Price: " + fmt.format(totalPrice);
-		contents = " ";
+		return double totalPrice;
 		
-		return contents;
-		//contains of the shopping cart together, summerized
 	}
 	
 }
+
+
